@@ -1,0 +1,54 @@
+[gd_scene load_steps=5 format=3 uid="uid://cjby77egdtuh8"]
+
+[ext_resource type="Script" path="res://Character1.gd" id="1_cfv55"]
+[ext_resource type="Script" path="res://Character2.gd" id="2_owcek"]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_03ob4"]
+vertices = PackedVector2Array(-155, -189, 996, -388, -100, 691, -1246, 2239, 828, 833)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2), PackedInt32Array(3, 0, 2), PackedInt32Array(3, 2, 4)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-155, -189, -1246, 2239, 828, 833, -100, 691, 996, -388)])
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sqmug"]
+size = Vector2(40, 40)
+
+[node name="NavigationTest" type="Node2D"]
+position = Vector2(159, 183)
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
+navigation_polygon = SubResource("NavigationPolygon_03ob4")
+
+[node name="Character1" type="CharacterBody2D" parent="."]
+script = ExtResource("1_cfv55")
+
+[node name="ColorRect" type="ColorRect" parent="Character1"]
+offset_left = -20.0
+offset_top = -19.0
+offset_right = 20.0
+offset_bottom = 21.0
+metadata/_edit_use_anchors_ = true
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="Character1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Character1"]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_sqmug")
+
+[node name="TargetPosition" type="Marker2D" parent="Character1"]
+position = Vector2(507, 844)
+
+[node name="Character2" type="CharacterBody2D" parent="."]
+position = Vector2(100, 2.08165e-12)
+script = ExtResource("2_owcek")
+
+[node name="ColorRect" type="ColorRect" parent="Character2"]
+offset_left = -20.0
+offset_top = -19.0
+offset_right = 20.0
+offset_bottom = 21.0
+metadata/_edit_use_anchors_ = true
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="Character2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Character2"]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_sqmug")
