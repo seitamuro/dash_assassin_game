@@ -4,7 +4,7 @@ var PLAYER_OPERATION_MODE = "SWIPE" # "FLIP" or "SWIPE"
 
 var DEBUG_SHOW_SWIPE_LOG = false
 var DEBUG_PLAYER_RIGID_STATUS = false
-var DEBUG_PLAYER_FORCE_DIRECTION = true
+var DEBUG_PLAYER_FORCE_DIRECTION = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
