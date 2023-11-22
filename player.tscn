@@ -11,17 +11,17 @@ gravity_scale = 2.66454e-15
 script = ExtResource("1_8wgkc")
 
 [node name="ColorRect" type="ColorRect" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
 color = Color(0, 0, 1, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(20, 20)
 shape = SubResource("RectangleShape2D_q6w0u")
 
 [node name="Line2D" type="Line2D" parent="."]
-scale = Vector2(2, 2)
-points = PackedVector2Array(2.08165e-12, 2.08165e-12, 0, 0)
+points = PackedVector2Array(2.08165e-12, 2.08165e-12, 2.08165e-12, -400)
 width = 2.0
 
 [node name="SwipeController" parent="." instance=ExtResource("2_6wd2x")]

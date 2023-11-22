@@ -9,7 +9,7 @@ signal swiping(vec)
 
 var swipe_start = null
 
-func _unhandled_input(event):
+func _input(event):
 	if event.is_action_pressed("click"):
 		swipe_start = get_global_mouse_position()
 	if event.is_action_released("click"):
