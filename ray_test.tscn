@@ -1,0 +1,57 @@
+[gd_scene load_steps=3 format=3 uid="uid://dmhwcrdkbj4gx"]
+
+[ext_resource type="Script" path="res://RayCharacter1.gd" id="1_q3l0q"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_om8pc"]
+size = Vector2(40, 40)
+
+[node name="RayTest" type="Node2D"]
+
+[node name="Wall1" type="CharacterBody2D" parent="."]
+position = Vector2(169, 143)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall1"]
+position = Vector2(20, 20)
+shape = SubResource("RectangleShape2D_om8pc")
+
+[node name="ColorRect" type="ColorRect" parent="Wall1"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Character2" type="CharacterBody2D" parent="."]
+position = Vector2(268, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Character2"]
+position = Vector2(20, 20)
+shape = SubResource("RectangleShape2D_om8pc")
+
+[node name="ColorRect" type="ColorRect" parent="Character2"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Character1" type="CharacterBody2D" parent="."]
+position = Vector2(0, 139)
+script = ExtResource("1_q3l0q")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Character1"]
+position = Vector2(20, 20)
+shape = SubResource("RectangleShape2D_om8pc")
+
+[node name="ColorRect" type="ColorRect" parent="Character1"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="RayCast2D" type="RayCast2D" parent="Character1"]
+position = Vector2(20, 20)
+target_position = Vector2(356, 2)
+
+[node name="Character3" type="CharacterBody2D" parent="."]
+position = Vector2(260, 140)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Character3"]
+position = Vector2(20, 20)
+shape = SubResource("RectangleShape2D_om8pc")
+
+[node name="ColorRect" type="ColorRect" parent="Character3"]
+offset_right = 40.0
+offset_bottom = 40.0
