@@ -1,7 +1,8 @@
 extends Node
 
 var DEBUG_SHOW_SWIPE_LOG = false
-var DEBUG_PLAYER_RIGID_STATUS = true
+var DEBUG_PLAYER_RIGID_STATUS = false
+var DEBUG_PLAYER_FORCE_DIRECTION = true
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

@@ -22,7 +22,8 @@ color = Color(0, 0, 1, 1)
 shape = SubResource("RectangleShape2D_q6w0u")
 
 [node name="Line2D" type="Line2D" parent="."]
-points = PackedVector2Array(2.08165e-12, 2.08165e-12, 2.08165e-12, -400)
+visible = false
+points = PackedVector2Array(2.08165e-12, 2.08165e-12, 2.08165e-12, 2.08165e-12)
 width = 2.0
 
 [node name="SwipeController" parent="." instance=ExtResource("2_6wd2x")]
