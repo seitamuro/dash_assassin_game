@@ -18,3 +18,12 @@ position = Vector2(74, 98)
 
 [node name="Player" parent="Field" instance=ExtResource("2_jmuqk")]
 position = Vector2(276, 99)
+
+[node name="Enemy2" parent="Field" instance=ExtResource("1_pa0xi")]
+position = Vector2(120, 165)
+
+[node name="Enemy3" parent="Field" instance=ExtResource("1_pa0xi")]
+position = Vector2(127, 253)
+
+[node name="Enemy4" parent="Field" instance=ExtResource("1_pa0xi")]
+position = Vector2(95, 355)
