@@ -1,6 +1,7 @@
 extends Node
 
-var DEBUG_SHOW_SWIPE_LOG = true
+var DEBUG_SHOW_SWIPE_LOG = false
+var DEBUG_PLAYER_RIGID_STATUS = true
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

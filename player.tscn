@@ -8,6 +8,7 @@ size = Vector2(40, 40)
 
 [node name="Player" type="RigidBody2D"]
 gravity_scale = 2.66454e-15
+linear_damp = 1.0
 script = ExtResource("1_8wgkc")
 
 [node name="ColorRect" type="ColorRect" parent="."]
@@ -26,4 +27,5 @@ width = 2.0
 
 [node name="SwipeController" parent="." instance=ExtResource("2_6wd2x")]
 
+[connection signal="swipe" from="SwipeController" to="." method="_on_swipe_controller_swipe"]
 [connection signal="swiping" from="SwipeController" to="." method="_on_swipe_controller_swiping"]
