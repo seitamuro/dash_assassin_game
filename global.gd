@@ -1,5 +1,7 @@
 extends Node
 
+var PLAYER_OPERATION_MODE = "SWIPE" # "FLIP" or "SWIPE"
+
 var DEBUG_SHOW_SWIPE_LOG = false
 var DEBUG_PLAYER_RIGID_STATUS = false
 var DEBUG_PLAYER_FORCE_DIRECTION = true

@@ -15,10 +15,14 @@ func _process(_delta):
 
 # スワイプ中の処理
 func _on_swipe_controller_swiping(vec):
-	$Line2D.set_point_position(1, vec)
+	if get_node("/root/Global").DEBUG_SHOW_SWIPE_LOG:
+		$Line2D.set_point_position(1, vec)
+	
+	if get_node("/root/Global").PLAYER_OPERATION_MODE == "SWIPE":
+		move_and_collide(vec / 100)
 
 
 # 指を話した瞬間の処理
 func _on_swipe_controller_swipe(vec):
-	#apply_force(vec*100)
-	apply_impulse(vec)
+	if get_node("/root/Global").PLAYER_OPERATION_MODE == "FLIP":
+		apply_impulse(vec)
