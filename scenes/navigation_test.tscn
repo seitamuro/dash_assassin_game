@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://cjby77egdtuh8"]
 
-[ext_resource type="Script" path="res://Character1.gd" id="1_cfv55"]
-[ext_resource type="Script" path="res://Character2.gd" id="2_owcek"]
+[ext_resource type="Script" path="res://scripts/Character1.gd" id="1_cfv55"]
+[ext_resource type="Script" path="res://scripts/Character2.gd" id="2_owcek"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_03ob4"]
 vertices = PackedVector2Array(-155, -189, 996, -388, -100, 691, -1246, 2239, 828, 833)

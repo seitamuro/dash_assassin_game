@@ -1,9 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://cxjqok6j4p386"]
+[gd_scene load_steps=2 format=3 uid="uid://dk78fsnqj0055"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_7d6wx"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w0xnx"]
 size = Vector2(77.2242, 33.5947)
 
-[node name="Walll" type="Area2D"]
+[node name="Wall2" type="CharacterBody2D"]
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
 
@@ -11,7 +11,7 @@ size = Vector2(77.2242, 33.5947)
 position = Vector2(19.8968, 67.3683)
 rotation = 3.14159
 scale = Vector2(0.520646, 4.02633)
-shape = SubResource("RectangleShape2D_7d6wx")
+shape = SubResource("RectangleShape2D_w0xnx")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_right = 40.0
